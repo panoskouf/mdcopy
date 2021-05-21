@@ -11,10 +11,10 @@
   "permissions": [],
   "content_scripts": [
     {
-      "run_at" :"document_end",
+      "run_at": "document_end",
       "matches": ["http://*/*", "https://*/*"],
       "js": ["src/script.js"],
-      "css":["src/css/style.css"]
+      "css": ["src/css/style.css"]
     }
   ],
   "background": {
@@ -42,6 +42,13 @@
         "linux": "Alt+I"
       },
       "description": "Copy link in markdown format"
+    },
+    "custom": {
+      "suggested_key": {
+        "default": "Alt+C",
+        "linux": "Alt+C"
+      },
+      "description": "Copy link with customized format"
     }
   }
 }
